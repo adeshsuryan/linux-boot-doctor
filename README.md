@@ -27,6 +27,8 @@ brew install linux-boot-doctor
 
 Prebuilt tarballs for Linux and macOS from GitHub Releases (no local compile). If Homebrew refuses because of an outdated Xcode install on the Mac, update/remove Xcode or install the `darwin-arm64` / `darwin-amd64` Release tarball manually. LIVE systemd capture still requires Linux.
 
+This will **not** appear on https://formulae.brew.sh until accepted into Homebrew Core. A Core-style draft (source build + livecheck + test) is in [`packaging/homebrew-core/`](packaging/homebrew-core/) — see `SUBMIT.md`.
+
 ### AUR (Arch)
 
 ```bash

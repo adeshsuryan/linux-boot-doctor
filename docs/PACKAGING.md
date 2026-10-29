@@ -1,9 +1,10 @@
 # Distribution channels
 
-| Channel | Status in 0.1.0 | Path |
+| Channel | Status | Path |
 | --- | --- | --- |
 | GitHub Releases | Primary — CI `release.yml` on tag `v*` | `.github/workflows/release.yml` |
-| Homebrew tap | Formula template + tap instructions | `packaging/homebrew/` |
+| Homebrew tap | Live — `adeshsuryan/tap` (prebuilt) | `packaging/homebrew/` |
+| Homebrew Core | Draft for formulae.brew.sh PR (not merged) | `packaging/homebrew-core/` |
 | AUR | PKGBUILD ready for submit | `packaging/aur/` |
 | Fedora COPR | RPM spec ready | `packaging/copr/` |
 | Ubuntu/Debian PPA | debian/ skeleton | `packaging/debian/` |
