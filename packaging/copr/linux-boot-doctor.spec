@@ -1,5 +1,5 @@
 Name:           linux-boot-doctor
-Version:        0.1.0
+Version:        0.1.1
 Release:        1%{?dist}
 Summary:        Diagnose slow Linux boots from systemd-analyze evidence
 

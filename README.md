@@ -21,10 +21,11 @@ linux-boot-doctor --version
 
 ```bash
 brew tap adeshsuryan/tap
+brew trust adeshsuryan/tap   # required once on newer Homebrew
 brew install linux-boot-doctor
 ```
 
-Formula lives in this repo under `packaging/homebrew/` and is published via the `adeshsuryan/homebrew-tap` tap (see packaging docs). On macOS the binary is useful for `--input` fixture analysis; LIVE systemd capture requires Linux.
+Prebuilt bottles/tarballs for Linux and macOS (from GitHub Releases). On macOS use `--input` for fixtures; LIVE systemd capture still requires Linux.
 
 ### AUR (Arch)
 

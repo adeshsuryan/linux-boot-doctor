@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 — 2026-10-29
+
+- Ship macOS GitHub Release artifacts (`darwin-arm64`, `darwin-amd64`) so Homebrew installs a binary without a local Rust/Xcode build
+- Homebrew formula uses prebuilt tarballs on macOS and Linux
+
 ## 0.1.0 — 2026-10-29
 
 - Initial release: Rust CLI `linux-boot-doctor check`

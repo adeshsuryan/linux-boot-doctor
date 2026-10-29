@@ -1,3 +1,9 @@
+linux-boot-doctor (0.1.1-1) unstable; urgency=medium
+
+  * Add macOS release artifacts for Homebrew binary installs.
+
+ -- Adesh Suryan <adeshsuryan2005@gmail.com>  Wed, 29 Oct 2026 19:20:00 +0530
+
 linux-boot-doctor (0.1.0-1) unstable; urgency=medium
 
   * Initial release.

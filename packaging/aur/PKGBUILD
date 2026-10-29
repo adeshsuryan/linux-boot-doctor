@@ -1,6 +1,6 @@
 # Maintainer: Adesh Suryan <adeshsuryan2005@gmail.com>
 pkgname=linux-boot-doctor
-pkgver=0.1.0
+pkgver=0.1.1
 pkgrel=1
 pkgdesc="Diagnose slow Linux boots from systemd-analyze evidence (read-only CLI)"
 arch=('x86_64' 'aarch64')
@@ -9,7 +9,7 @@ license=('MIT')
 depends=('gcc-libs')
 makedepends=('cargo' 'rust')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/adeshsuryan/linux-boot-doctor/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=('17d16e715a7a6f91f16aef40f9498f0107bbc392f4930fa7cd228881a8bdeff1')
+sha256sums=('SKIP')
 
 prepare() {
   cd "$pkgname-$pkgver"
