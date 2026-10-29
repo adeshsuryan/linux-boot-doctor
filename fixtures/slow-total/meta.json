@@ -1,0 +1,1 @@
+{"source":"synthetic","purpose":"boot-time-budget-exceeded","expectedRules":["boot-time-budget-exceeded","userspace-boot-dominated","slow-critical-chain-unit","network-wait-online-suspect"]}

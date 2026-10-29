@@ -1,0 +1,3 @@
+  8.200s NetworkManager-wait-online.service
+  1.500s NetworkManager.service
+    400ms dbus.service

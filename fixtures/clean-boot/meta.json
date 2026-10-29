@@ -1,0 +1,5 @@
+{
+  "source": "docker-boot-lab",
+  "distro": "ubuntu:24.04",
+  "capturedAt": "2026-10-29T13:11:43Z"
+}

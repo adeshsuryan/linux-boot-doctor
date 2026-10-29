@@ -1,0 +1,21 @@
+[package]
+name = "linux-boot-doctor"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+description = "Diagnose slow Linux boots: systemd-analyze evidence with budgets and CI JSON"
+readme.workspace = true
+keywords = ["linux", "systemd", "boot", "diagnostics", "cli"]
+categories = ["command-line-utilities", "development-tools"]
+
+[[bin]]
+name = "linux-boot-doctor"
+path = "src/main.rs"
+
+[dependencies]
+boot-doctor-core = { workspace = true }
+clap = { workspace = true }
+serde_json = { workspace = true }

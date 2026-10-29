@@ -1,0 +1,15 @@
+Source: linux-boot-doctor
+Section: utils
+Priority: optional
+Maintainer: Adesh Suryan <adeshsuryan2005@gmail.com>
+Build-Depends: debhelper-compat (= 13), cargo, rustc
+Standards-Version: 4.6.2
+Homepage: https://github.com/adeshsuryan/linux-boot-doctor
+Rules-Requires-Root: no
+
+Package: linux-boot-doctor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Diagnose slow Linux boots from systemd-analyze evidence
+ Read-only CLI that produces ranked findings, budgets, and JSON for CI
+ from systemd-analyze time/blame/critical-chain captures.

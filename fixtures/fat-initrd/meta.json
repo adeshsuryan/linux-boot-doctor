@@ -1,0 +1,1 @@
+{"source":"synthetic","purpose":"initramfs-size-budget","initrdBytes":52428800,"expectedRules":["initramfs-size-budget"]}

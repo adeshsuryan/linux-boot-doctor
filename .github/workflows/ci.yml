@@ -1,0 +1,22 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Test
+        run: cargo test --workspace
+      - name: Clippy
+        run: cargo clippy --workspace -- -D warnings
+      - name: Fixture smoke
+        run: |
+          cargo build -p linux-boot-doctor
+          ./target/debug/linux-boot-doctor check --input fixtures/slow-total --fail-on high; test $? -eq 1
+          ./target/debug/linux-boot-doctor check --input fixtures/clean-boot --fail-on high

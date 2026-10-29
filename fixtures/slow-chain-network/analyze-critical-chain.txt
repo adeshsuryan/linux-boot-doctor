@@ -1,0 +1,5 @@
+multi-user.target @12.000s
+??network-online.target @12.000s
+  ??NetworkManager-wait-online.service @3.800s +8.200s
+    ??NetworkManager.service @2.300s +1.500s
+      ??dbus.service @1.900s +400ms

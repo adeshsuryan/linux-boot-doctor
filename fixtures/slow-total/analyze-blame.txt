@@ -1,0 +1,5 @@
+ 28.442s user.slice
+  6.551s NetworkManager-wait-online.service
+  2.104s systemd-journald.service
+  1.891s NetworkManager.service
+    512ms systemd-udev-trigger.service

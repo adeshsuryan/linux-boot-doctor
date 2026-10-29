@@ -1,0 +1,9 @@
+The time after the unit is active or started is printed after the "@" character.
+The time the unit takes to start is printed after the "+" character.
+
+multi-user.target @28.442s
+??network-online.target @28.442s
+  ??NetworkManager-wait-online.service @6.551s +21.891s
+    ??NetworkManager.service @1.891s +4.660s
+      ??dbus.service @512ms +1.379s
+        ??basic.target @412ms

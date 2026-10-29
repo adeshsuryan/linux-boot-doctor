@@ -1,0 +1,2 @@
+Startup finished in 267ms (userspace) 
+multi-user.target reached after 260ms in userspace.

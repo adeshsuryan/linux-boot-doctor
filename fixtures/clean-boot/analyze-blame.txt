@@ -1,0 +1,33 @@
+47ms systemd-resolved.service
+25ms systemd-journald.service
+25ms systemd-logind.service
+19ms systemd-journal-flush.service
+16ms systemd-tmpfiles-clean.service
+14ms ldconfig.service
+12ms dev-hugepages.mount
+12ms e2scrub_reap.service
+11ms sys-kernel-debug.mount
+11ms sys-kernel-tracing.mount
+10ms systemd-journal-catalog-update.service
+ 8ms systemd-tmpfiles-setup.service
+ 8ms systemd-update-utmp.service
+ 8ms systemd-binfmt.service
+ 8ms modprobe@configfs.service
+ 8ms modprobe@dm_mod.service
+ 7ms modprobe@drm.service
+ 7ms systemd-tmpfiles-setup-dev-early.service
+ 6ms modprobe@efi_pstore.service
+ 6ms systemd-sysusers.service
+ 6ms systemd-sysctl.service
+ 6ms modprobe@fuse.service
+ 5ms systemd-update-utmp-runlevel.service
+ 5ms systemd-tmpfiles-setup-dev.service
+ 5ms modprobe@loop.service
+ 4ms systemd-modules-load.service
+ 4ms sys-fs-fuse-connections.mount
+ 4ms systemd-user-sessions.service
+ 3ms systemd-update-done.service
+ 3ms dbus.service
+ 3ms systemd-remount-fs.service
+ 3ms sys-kernel-config.mount
+ 3ms proc-sys-fs-binfmt_misc.mount

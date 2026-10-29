@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: linux-boot-doctor
+Source: https://github.com/adeshsuryan/linux-boot-doctor
+
+Files: *
+Copyright: 2026 Adesh Suryan
+License: MIT

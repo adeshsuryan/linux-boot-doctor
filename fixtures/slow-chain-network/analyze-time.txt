@@ -1,0 +1,1 @@
+Startup finished in 412ms (firmware) + 200ms (loader) + 800ms (kernel) + 1.000s (initrd) + 12.000s (userspace) = 14.412s
