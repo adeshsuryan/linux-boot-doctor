@@ -25,7 +25,7 @@ brew trust adeshsuryan/tap   # required once on newer Homebrew
 brew install linux-boot-doctor
 ```
 
-Prebuilt bottles/tarballs for Linux and macOS (from GitHub Releases). On macOS use `--input` for fixtures; LIVE systemd capture still requires Linux.
+Prebuilt tarballs for Linux and macOS from GitHub Releases (no local compile). If Homebrew refuses because of an outdated Xcode install on the Mac, update/remove Xcode or install the `darwin-arm64` / `darwin-amd64` Release tarball manually. LIVE systemd capture still requires Linux.
 
 ### AUR (Arch)
 
