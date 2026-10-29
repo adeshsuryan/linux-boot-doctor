@@ -9,7 +9,7 @@ license=('MIT')
 depends=('gcc-libs')
 makedepends=('cargo' 'rust')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/adeshsuryan/linux-boot-doctor/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=('SKIP')
+sha256sums=('979d1bf9c07c531e4dd8361200f8637d2b157276ea461e7fb744831f7d41a422')
 
 prepare() {
   cd "$pkgname-$pkgver"
