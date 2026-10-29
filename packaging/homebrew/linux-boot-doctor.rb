@@ -1,7 +1,3 @@
-# Homebrew formula template for adeshsuryan/homebrew-tap
-# After each GitHub Release, update url/sha256 for the darwin or linux bottle you ship.
-# linux-boot-doctor is primarily a Linux binary; on macOS prefer --input mode.
-
 class LinuxBootDoctor < Formula
   desc "Diagnose slow Linux boots from systemd-analyze evidence"
   homepage "https://github.com/adeshsuryan/linux-boot-doctor"
@@ -11,24 +7,23 @@ class LinuxBootDoctor < Formula
   on_linux do
     on_intel do
       url "https://github.com/adeshsuryan/linux-boot-doctor/releases/download/v0.1.0/linux-boot-doctor-0.1.0-linux-amd64.tar.gz"
-      # sha256 "REPLACE_AFTER_RELEASE"
+      sha256 "3fbebd612bf406e9e870bb388019e518e2735bf06f948db798f7974fc6af4c3d"
     end
     on_arm do
       url "https://github.com/adeshsuryan/linux-boot-doctor/releases/download/v0.1.0/linux-boot-doctor-0.1.0-linux-arm64.tar.gz"
-      # sha256 "REPLACE_AFTER_RELEASE"
+      sha256 "a3b2f909df32eb94ea1c2ff4041185cf4f9909526a317bebd176fb4c6417e9d3"
     end
   end
 
   on_macos do
-    # Build from source on macOS for --input / CI fixture use
     url "https://github.com/adeshsuryan/linux-boot-doctor/archive/refs/tags/v0.1.0.tar.gz"
-    # sha256 "REPLACE_SOURCE_TARBALL_AFTER_TAG"
+    sha256 "17d16e715a7a6f91f16aef40f9498f0107bbc392f4930fa7cd228881a8bdeff1"
     depends_on "rust" => :build
   end
 
   def install
     if OS.mac?
-      system "cargo", "install", "--locked", "--root", prefix, "--path", "crates/boot-doctor-cli"
+      system "cargo", "install", "--root", prefix, "--path", "crates/boot-doctor-cli"
     else
       bin.install "linux-boot-doctor"
     end
