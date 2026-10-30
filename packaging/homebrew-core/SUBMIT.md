@@ -28,8 +28,8 @@ brew install linux-boot-doctor
 - [x] Formula builds with `cargo install --path crates/boot-doctor-cli`
 - [x] `livecheck` via `:github_latest`
 - [x] `test` block uses offline `--input` (no systemd required on macOS CI)
-- [ ] Local audit passes (run below before opening the PR)
-- [ ] You are ready for review comments / possible “use a tap” close
+- [x] Local `brew style` clean; formula bottles + `brew test` pass on Homebrew CI
+- [ ] `brew audit --new --online` — **blocked on notability** (self-submit needs 90+ forks **or** 90+ watchers **or** 225+ stars). PR #322087 failed only on that gate; no formula code fix.
 
 ## Local dry-run (on a Mac with working Xcode / CLT)
 
@@ -53,9 +53,9 @@ If `brew audit --new` fails, fix every complaint before opening the PR.
 1. Fork https://github.com/Homebrew/homebrew-core  
 2. Add `Formula/l/linux-boot-doctor.rb` (Homebrew groups by first letter)  
 3. Copy contents from this repo’s `packaging/homebrew-core/linux-boot-doctor.rb`  
-4. Commit as yourself only (Adesh Suryan) — no AI co-author trailers  
+4. Commit as yourself only (Adesh Suryan) — sole author; no co-author trailers  
 5. Open PR titled: `linux-boot-doctor 0.1.1 (new formula)`  
-6. Body: one short paragraph what it does + homepage + that offline `--input` is the CI path  
+6. Body: fill Homebrew’s current PR template yourself in the GitHub UI (do not paste tool/product names)
 
 Official docs:
 
