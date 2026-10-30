@@ -18,5 +18,11 @@ jobs:
       - name: Fixture smoke
         run: |
           cargo build -p linux-boot-doctor
-          ./target/debug/linux-boot-doctor check --input fixtures/slow-total --fail-on high; test $? -eq 1
+          # slow-total must exit 1 (findings). Capture status under set +e so bash -e
+          # does not abort before the equality check.
+          set +e
+          ./target/debug/linux-boot-doctor check --input fixtures/slow-total --fail-on high
+          status=$?
+          set -e
+          test "$status" -eq 1
           ./target/debug/linux-boot-doctor check --input fixtures/clean-boot --fail-on high
